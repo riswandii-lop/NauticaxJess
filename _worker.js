@@ -165,13 +165,13 @@ function getAllConfig(request, hostName, proxyList, page = 0) {
     }
 
     // Update Prev button to link to the Telegram group
-document.addPageButton("JOIN GRUP", "https://t.me/jesvpntun", false); // No condition for disabling, just a link
+document.addPageButton("join grup", "https://t.me/jesvpntun", false); // No condition for disabling, just a link
 
 // Update Next button to link to the WhatsApp admin
-document.addPageButton("QRIS DONASI", "https://i.imghippo.com/files/Rfn7163R.jpg", false); // No condition for disabling, just a link
+document.addPageButton("qris", "https://i.imghippo.com/files/Rfn7163R.jpg", false); // No condition for disabling, just a link
 
 // Add Donasi button (link to WhatsApp with a message)
-document.addPageButton("SUDAH DONASI", "https://wa.me/6285888801241?text=Halo%20saya%20ingin%20mendonasikan%20uang.", false); // Replace with your actual donation link
+document.addPageButton("sudah donasi", "https://wa.me/6285888801241?text=Halo%20saya%20ingin%20mendonasikan%20uang.", false); // Replace with your actual donation link
 
     return document.build();
   } catch (error) {
