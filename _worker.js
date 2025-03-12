@@ -1163,7 +1163,7 @@ let baseHTML = `
                 onclick="copyToClipboardAsRaw()"
                 class="basis-1/2 p-2 rounded-full bg-amber-400 flex justify-center items-center"
               >
-                Raw
+                Salin Akun
               </button>
             </div>
           </div>
