@@ -165,10 +165,10 @@ function getAllConfig(request, hostName, proxyList, page = 0) {
     }
 
     // Update Prev button to link to the Telegram group
-document.addPageButton("Prev", "https://t.me/jesvpntun", false); // No condition for disabling, just a link
+document.addPageButton("Join grup", "https://t.me/jesvpntun", false); // No condition for disabling, just a link
 
 // Update Next button to link to the WhatsApp admin
-document.addPageButton("Next", "https://wa.me/6285888801241", false); // No condition for disabling, just a link
+document.addPageButton("Admin", "https://wa.me/6285888801241", false); // No condition for disabling, just a link
 
 // Add Donasi button (link to a donation page or payment platform)
 document.addPageButton("Donasi", "https://t.me/Donasivpn", false); // Replace with your actual donation link
