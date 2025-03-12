@@ -113,13 +113,10 @@ function getAllConfig(request, hostName, proxyList, page = 0) {
     uri.searchParams.set("host", hostName);
 
     // Build HTML
-const document = new Document(request);
-document.setTitle("Welcome to <span class='text-blue-500 font-semibold'>Selamat datang! Terima kasih telah mengunjungi JessVpntunnel</span>");
-
-// Add a welcome message
-document.addInfo("<h2 class='text-green-500 font-semibold'>Selamat datang! Terima kasih telah mengunjungi JessVpntunnel.</h2>");
-document.addInfo(`Total: ${proxyList.length}`);
-document.addInfo(`Page: ${page}/${Math.floor(proxyList.length / PROXY_PER_PAGE)}`);
+    const document = new Document(request);
+    document.setTitle("Welcome to <span class='text-blue-500 font-semibold'>JessVpntunnel</span>");
+    document.addInfo(`Total: ${proxyList.length}`);
+    document.addInfo(`Page: ${page}/${Math.floor(proxyList.length / PROXY_PER_PAGE)}`);
 
     for (let i = startIndex; i < startIndex + PROXY_PER_PAGE; i++) {
       const proxy = proxyList[i];
