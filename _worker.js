@@ -170,8 +170,8 @@ document.addPageButton("Join grup", "https://t.me/jesvpntun", false); // No cond
 // Update Next button to link to the WhatsApp admin
 document.addPageButton("Admin", "https://wa.me/6285888801241", false); // No condition for disabling, just a link
 
-// Add Donasi button (link to a donation page or payment platform)
-document.addPageButton("Donasi", "https://t.me/Donasivpn", false); // Replace with your actual donation link
+// Add Donasi button (link to WhatsApp with a message)
+document.addPageButton("Donasi", "https://wa.me/6285888801241?text=Halo%20saya%20ingin%20mendonasikan%20uang.", false); // Replace with your actual donation link
 
     return document.build();
   } catch (error) {
