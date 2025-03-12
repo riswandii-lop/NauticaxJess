@@ -114,7 +114,7 @@ function getAllConfig(request, hostName, proxyList, page = 0) {
 
     // Build HTML
 const document = new Document(request);
-document.setTitle("<span class='text-white-500' style='font-size: 12px; font-weight: bold; font-style: italic;'>Selamat datang!<br>Terima kasih telah mengunjungi<br>Worker JessVpntunnel</span>");
+document.setTitle("<span class='text-white-500' style='font-size: 12px; font-weight: bold; font-style: italic;'>Selamat datang! Terima kasih telah<br>mengunjungi Worker JessVpntunnel</span>");
 document.addInfo(`Total: ${proxyList.length}`);
 document.addInfo(`Page: ${page}/${Math.floor(proxyList.length / PROXY_PER_PAGE)}`);
 
