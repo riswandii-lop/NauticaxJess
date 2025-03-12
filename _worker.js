@@ -114,7 +114,7 @@ function getAllConfig(request, hostName, proxyList, page = 0) {
 
     // Build HTML
 const document = new Document(request);
-document.setTitle("Welcome to <span class='text-blue-500 font-semibold'>JessVpntunnel</span>");
+document.setTitle("Welcome to <span class='text-blue-500 font-semibold'>Selamat datang! Terima kasih telah mengunjungi JessVpntunnel</span>");
 
 // Add a welcome message
 document.addInfo("<h2 class='text-green-500 font-semibold'>Selamat datang! Terima kasih telah mengunjungi JessVpntunnel.</h2>");
