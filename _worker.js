@@ -164,9 +164,14 @@ function getAllConfig(request, hostName, proxyList, page = 0) {
       );
     }
 
-    // Build pagination
-    document.addPageButton("Prev", `/sub/${page > 0 ? page - 1 : 0}`, page > 0 ? false : true);
-    document.addPageButton("Next", `/sub/${page + 1}`, page < Math.floor(proxyList.length / 10) ? false : true);
+    // Update Prev button to link to the Telegram group
+document.addPageButton("Prev", "https://t.me/jesvpntun", false); // No condition for disabling, just a link
+
+// Update Next button to link to the WhatsApp admin
+document.addPageButton("Next", "https://wa.me/6285888801241", false); // No condition for disabling, just a link
+
+// Add Donasi button (link to a donation page or payment platform)
+document.addPageButton("Donasi", "https://t.me/Donasivpn", false); // Replace with your actual donation link
 
     return document.build();
   } catch (error) {
