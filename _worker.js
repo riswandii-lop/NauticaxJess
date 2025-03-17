@@ -173,25 +173,6 @@ document.addPageButton("Buat kopi", "https://i.imghippo.com/files/Rfn7163R.jpg",
 // Menambahkan tombol Donasi (link ke WhatsApp dengan pesan)
 document.addPageButton("Admin", "https://wa.me/6285888801241?text=Halo%20saya%20sudah%20mendonasikan%20uang.", false); // Ganti dengan link donasi yang sebenarnya
 
-// Menghitung jumlah total pengunjung
-let jumlahPengunjung = localStorage.getItem('visitorCount');
-if (!jumlahPengunjung) {
-  jumlahPengunjung = 0;  // Jika jumlah pengunjung tidak ada, mulai dengan 0
-}
-
-jumlahPengunjung++;  // Menambah jumlah pengunjung
-
-// Menyimpan jumlah pengunjung yang sudah diperbarui ke localStorage
-localStorage.setItem('visitorCount', jumlahPengunjung);
-
-// Menampilkan jumlah pengunjung (contohnya menggunakan alert, bisa ditempatkan di mana saja)
-alert('Total pengunjung: ' + jumlahPengunjung);
-
-// Anda juga bisa menampilkan jumlah pengunjung di halaman web dengan menambahkan ke elemen HTML seperti ini:
-const elemenPengunjung = document.getElementById("visitor-count");
-if (elemenPengunjung) {
-  elemenPengunjung.textContent = "Total Pengunjung: " + jumlahPengunjung;
-}
     return document.build();
   } catch (error) {
     return `An error occurred while generating the ${reverse("SSELV")} configurations. ${error}`;
