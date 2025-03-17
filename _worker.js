@@ -171,7 +171,7 @@ document.addPageButton("join grup", "https://t.me/jesvpntun", false); // No cond
 document.addPageButton("Buat kopi", "https://i.imghippo.com/files/Rfn7163R.jpg", false); // No condition for disabling, just a link
 
 // Add Donasi button (link to WhatsApp with a message)
-document.addPageButton("Admin", "https://wa.me/6285888801241?text=Halo%20saya%20sudah%20mendonasikan%20uang untuk beli kopi min semangat.", false); // Replace with your actual donation link
+document.addPageButton("Admin", "https://wa.me/6285888801241?text=Halo%20saya%20sudah%20mendonasikan%20uang.", false); // Replace with your actual donation link
 
     return document.build();
   } catch (error) {
