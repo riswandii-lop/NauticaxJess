@@ -165,16 +165,14 @@ document.addInfo(`Page: ${page}/${Math.floor(proxyList.length / PROXY_PER_PAGE)}
     }
 
     // Update Prev button to link to the Telegram group
-document.addPageButton("Join Group", "https://t.me/jesvpntun", false).style = "font-weight: bold; font-size: 12px"; // No condition for disabling, just a link
+document.addPageButton("join grup", "https://t.me/jesvpntun", false); // No condition for disabling, just a link
 
 // Update Next button to link to the WhatsApp admin
-document.addPageButton("Buat Kopi", "https://i.imghippo.com/files/Rfn7163R.jpg", false).style = "font-weight: bold; font-size: 12px"; // No condition for disabling, just a link
+document.addPageButton("Buat kopi", "https://i.imghippo.com/files/Rfn7163R.jpg", false); // No condition for disabling, just a link
 
 // Add Donasi button (link to WhatsApp with a message)
-document.addPageButton("Admin", "https://wa.me/6285888801241?text=Halo%20saya%20sudah%20mendonasikan%20uang.", false).style = "font-weight: bold; font-size: 12px"; // Replace with your actual donation link
+document.addPageButton("Admin", "https://wa.me/6285888801241?text=Halo%20saya%20sudah%20mendonasikan%20uang.", false); // Replace with your actual donation link
 
-// Add copyright message (based on your comment)
-document.addPageButton("© 2024 JESVPN", "#", false).style = "font-weight: bold; font-size: 12px"; // Placeholder for copyright, can be replaced with actual link if needed
     return document.build();
   } catch (error) {
     return `An error occurred while generating the ${reverse("SSELV")} configurations. ${error}`;
