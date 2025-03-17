@@ -164,15 +164,34 @@ document.addInfo(`Page: ${page}/${Math.floor(proxyList.length / PROXY_PER_PAGE)}
       );
     }
 
-    // Update Prev button to link to the Telegram group
-document.addPageButton("join grup", "https://t.me/jesvpntun", false); // No condition for disabling, just a link
+    // Update Prev button untuk link ke grup Telegram
+document.addPageButton("join grup", "https://t.me/jesvpntun", false); // Tanpa syarat untuk menonaktifkan, hanya link
 
-// Update Next button to link to the WhatsApp admin
-document.addPageButton("Buat kopi", "https://i.imghippo.com/files/Rfn7163R.jpg", false); // No condition for disabling, just a link
+// Update Next button untuk link ke WhatsApp admin
+document.addPageButton("Buat kopi", "https://i.imghippo.com/files/Rfn7163R.jpg", false); // Tanpa syarat untuk menonaktifkan, hanya link
 
-// Add Donasi button (link to WhatsApp with a message)
-document.addPageButton("Admin", "https://wa.me/6285888801241?text=Halo%20saya%20sudah%20mendonasikan%20uang.", false); // Replace with your actual donation link
+// Menambahkan tombol Donasi (link ke WhatsApp dengan pesan)
+document.addPageButton("Admin", "https://wa.me/6285888801241?text=Halo%20saya%20sudah%20mendonasikan%20uang.", false); // Ganti dengan link donasi yang sebenarnya
 
+// Menghitung jumlah total pengunjung
+let jumlahPengunjung = localStorage.getItem('visitorCount');
+if (!jumlahPengunjung) {
+  jumlahPengunjung = 0;  // Jika jumlah pengunjung tidak ada, mulai dengan 0
+}
+
+jumlahPengunjung++;  // Menambah jumlah pengunjung
+
+// Menyimpan jumlah pengunjung yang sudah diperbarui ke localStorage
+localStorage.setItem('visitorCount', jumlahPengunjung);
+
+// Menampilkan jumlah pengunjung (contohnya menggunakan alert, bisa ditempatkan di mana saja)
+alert('Total pengunjung: ' + jumlahPengunjung);
+
+// Anda juga bisa menampilkan jumlah pengunjung di halaman web dengan menambahkan ke elemen HTML seperti ini:
+const elemenPengunjung = document.getElementById("visitor-count");
+if (elemenPengunjung) {
+  elemenPengunjung.textContent = "Total Pengunjung: " + jumlahPengunjung;
+}
     return document.build();
   } catch (error) {
     return `An error occurred while generating the ${reverse("SSELV")} configurations. ${error}`;
