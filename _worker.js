@@ -2,7 +2,7 @@ import { connect } from "cloudflare:sockets";
 
 // Variables
 const rootDomain = "mikorotok.cloud"; // Ganti dengan domain utama kalian
-const serviceName = "jessvpn"; // Ganti dengan nama workers kalian
+const serviceName = "vpn"; // Ganti dengan nama workers kalian
 const apiKey = "bJiJjjpoVgqmVdqBCHRXFcXz4LvHN3eIPamOneQG"; // Ganti dengan Global API key kalian (https://dash.cloudflare.com/profile/api-tokens)
 const apiEmail = "Litastore41@gmail.com"; // Ganti dengan email yang kalian gunakan
 const accountID = "0a767f885e610bfa46807fc77ae339a0"; // Ganti dengan Account ID kalian (https://dash.cloudflare.com -> Klik domain yang kalian gunakan)
@@ -114,7 +114,7 @@ function getAllConfig(request, hostName, proxyList, page = 0) {
 
     // Build HTML
 const document = new Document(request);
-document.setTitle("<span class='text-white-500' style='font-size: 12px; font-weight: bold; font-style: italic;'>Selamat datang! Terima kasih telah<br>mengunjungi Worker JessVpntunnel</span>");
+document.setTitle("<span class='text-white-500' style='font-size: 12px; font-weight: bold; font-style: italic;'>Selamat datang! Terima kasih telah<br>mengunjungi Worker Riswan Store</span>");
 document.addInfo(`Total: ${proxyList.length}`);
 document.addInfo(`Page: ${page}/${Math.floor(proxyList.length / PROXY_PER_PAGE)}`);
 
