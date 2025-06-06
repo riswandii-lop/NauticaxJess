@@ -168,7 +168,7 @@ document.addInfo(`Page: ${page}/${Math.floor(proxyList.length / PROXY_PER_PAGE)}
 document.addPageButton("join grup tele", "https://t.me/jesvpntun", false); // No condition for disabling, just a link
 
 // Update Next button to link to the WhatsApp admin
-document.addPageButton("tlaktir kopi", "https://i.imghippo.com/files/Rfn7163R.jpg", false); // No condition for disabling, just a link
+document.addPageButton("tlaktir kopi", "https://files.catbox.moe/oa1pve.png", false); // No condition for disabling, just a link
 
 // Add Donasi button (link to WhatsApp with a message)
 document.addPageButton("Join grup wa", "https://chat.whatsapp.com/FFOZDjV1Mfj3OwDlV14IkJ", false); // Replace with your actual donation link
