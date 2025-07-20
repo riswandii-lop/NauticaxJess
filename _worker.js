@@ -1,7 +1,7 @@
 import { connect } from "cloudflare:sockets";
 
 // Variables
-const rootDomain = "mikorotok.cloud"; // Ganti dengan domain utama kalian
+const rootDomain = "pgetunnel.cloud"; // Ganti dengan domain utama kalian
 const serviceName = "vpn"; // Ganti dengan nama workers kalian
 const apiKey = "bJiJjjpoVgqmVdqBCHRXFcXz4LvHN3eIPamOneQG"; // Ganti dengan Global API key kalian (https://dash.cloudflare.com/profile/api-tokens)
 const apiEmail = "Litastore41@gmail.com"; // Ganti dengan email yang kalian gunakan
